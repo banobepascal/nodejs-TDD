@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1578328584445" clover="3.2.0">
-  <project timestamp="1578328584445" name="All files">
+<coverage generated="1578329473085" clover="3.2.0">
+  <project timestamp="1578329473085" name="All files">
     <metrics statements="291" coveredstatements="206" conditionals="68" coveredconditionals="24" methods="41" coveredmethods="21" elements="400" coveredelements="251" complexity="0" loc="291" ncloc="291" packages="5" files="22" classes="22"/>
     <package name="TDD">
       <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
@@ -109,8 +109,8 @@
         <line num="4" count="6" type="stmt"/>
         <line num="6" count="6" type="stmt"/>
         <line num="30" count="6" type="stmt"/>
-        <line num="31" count="26" type="stmt"/>
-        <line num="32" count="26" type="stmt"/>
+        <line num="31" count="27" type="stmt"/>
+        <line num="32" count="27" type="stmt"/>
         <line num="35" count="6" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
