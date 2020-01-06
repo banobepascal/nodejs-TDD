@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1578326394230" clover="3.2.0">
-  <project timestamp="1578326394231" name="All files">
-    <metrics statements="282" coveredstatements="197" conditionals="64" coveredconditionals="20" methods="40" coveredmethods="20" elements="386" coveredelements="237" complexity="0" loc="282" ncloc="282" packages="5" files="21" classes="21"/>
+<coverage generated="1578328584445" clover="3.2.0">
+  <project timestamp="1578328584445" name="All files">
+    <metrics statements="291" coveredstatements="206" conditionals="68" coveredconditionals="24" methods="41" coveredmethods="21" elements="400" coveredelements="251" complexity="0" loc="291" ncloc="291" packages="5" files="22" classes="22"/>
     <package name="TDD">
       <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="index.js" path="/home/pascal/Documents/Tests/TDD/index.js">
@@ -109,8 +109,8 @@
         <line num="4" count="6" type="stmt"/>
         <line num="6" count="6" type="stmt"/>
         <line num="30" count="6" type="stmt"/>
-        <line num="31" count="24" type="stmt"/>
-        <line num="32" count="24" type="stmt"/>
+        <line num="31" count="26" type="stmt"/>
+        <line num="32" count="26" type="stmt"/>
         <line num="35" count="6" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
@@ -119,7 +119,7 @@
       </file>
     </package>
     <package name="TDD.routes">
-      <metrics statements="166" coveredstatements="91" conditionals="54" coveredconditionals="11" methods="22" coveredmethods="7"/>
+      <metrics statements="173" coveredstatements="98" conditionals="58" coveredconditionals="15" methods="23" coveredmethods="8"/>
       <file name="auth.js" path="/home/pascal/Documents/Tests/TDD/routes/auth.js">
         <metrics statements="18" coveredstatements="8" conditionals="6" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
@@ -277,6 +277,16 @@
         <line num="62" count="0" type="stmt"/>
         <line num="65" count="4" type="stmt"/>
       </file>
+      <file name="returns.js" path="/home/pascal/Documents/Tests/TDD/routes/returns.js">
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+      </file>
       <file name="users.js" path="/home/pascal/Documents/Tests/TDD/routes/users.js">
         <metrics statements="24" coveredstatements="12" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
@@ -306,7 +316,7 @@
       </file>
     </package>
     <package name="TDD.startup">
-      <metrics statements="39" coveredstatements="37" conditionals="2" coveredconditionals="1" methods="7" coveredmethods="6"/>
+      <metrics statements="41" coveredstatements="39" conditionals="2" coveredconditionals="1" methods="7" coveredmethods="6"/>
       <file name="config.js" path="/home/pascal/Documents/Tests/TDD/startup/config.js">
         <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
@@ -336,7 +346,7 @@
         <line num="13" count="4" type="stmt"/>
       </file>
       <file name="route.js" path="/home/pascal/Documents/Tests/TDD/startup/route.js">
-        <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -345,7 +355,7 @@
         <line num="6" count="4" type="stmt"/>
         <line num="7" count="4" type="stmt"/>
         <line num="8" count="4" type="stmt"/>
-        <line num="10" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
         <line num="11" count="4" type="stmt"/>
         <line num="12" count="4" type="stmt"/>
         <line num="13" count="4" type="stmt"/>
@@ -354,6 +364,8 @@
         <line num="16" count="4" type="stmt"/>
         <line num="17" count="4" type="stmt"/>
         <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
       </file>
       <file name="validation.js" path="/home/pascal/Documents/Tests/TDD/startup/validation.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
