@@ -58,24 +58,22 @@ describe("api/returns", () => {
     await Movie.remove({});
   });
 
-  describe("POST /", () => {
-    it("should return 401 if client is not logged in", async () => {
-      token = "";
-      const res = await exec();
-      expect(res.status).toBe(401);
-    });
+  it("should return 401 if client is not logged in", async () => {
+    token = "";
+    const res = await exec();
+    expect(res.status).toBe(401);
+  });
 
-    it("should return 400 if customerId is not provided", async () => {
-      customerId = "";
-      const res = await exec();
-      expect(res.status).toBe(400);
-    });
+  it("should return 400 if customerId is not provided", async () => {
+    customerId = "";
+    const res = await exec();
+    expect(res.status).toBe(400);
+  });
 
-    it("should return 400 if movieId is not provided", async () => {
-      movieId = "";
-      const res = await exec();
-      expect(res.status).toBe(400);
-    });
+  it("should return 400 if movieId is not provided", async () => {
+    movieId = "";
+    const res = await exec();
+    expect(res.status).toBe(400);
   });
 
   it("should return 404 if no rental found for customer/movieId", async () => {

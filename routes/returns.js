@@ -1,5 +1,6 @@
-const moment = require("moment");
 const Joi = require("joi");
+const mongoose = require('mongoose');
+const validate = require('../middleware/validate');
 const { Rental } = require("../models/rental");
 const { Movie } = require("../models/movie");
 const auth = require("../middleware/auth");
@@ -7,22 +8,14 @@ const express = require("express");
 
 const router = express.Router();
 
-router.post("/", auth, async (req, res) => {
-  const { error } = validateReturn(req.body);
-  if (error) return res.status(400).send(error.details[0].message);
-
-  const rental = await Rental.findOne({
-    "customer._id": req.body.customerId,
-    "movie._id": req.body.movieId
-  });
+router.post("/", [auth, validate(validateReturn)], async (req, res) => {
+  const rental = await Rental.lookup(req.body.customerId, req.body.movieId);
 
   if (!rental) return res.status(404).send("Rental not found...");
   if (rental.dateReturned)
     return res.status(400).send("Rental is already processed...");
 
-  rental.dateReturned = new Date();
-  const rentalDays = moment().diff(rental.dateOut, "days");
-  rental.rentalFee = rentalDays * rental.movie.dailyRentalRate;
+  rental.return();
   await rental.save();
 
   await Movie.update(
@@ -32,7 +25,7 @@ router.post("/", auth, async (req, res) => {
     }
   );
 
-  return res.status(200).send(rental);
+  return res.send(rental);
 });
 
 function validateReturn(req) {
